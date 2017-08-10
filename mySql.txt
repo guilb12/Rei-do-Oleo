@@ -1,0 +1,44 @@
+create table Pessoa(
+
+id_Pessoa integer primary key auto increment;
+nome_Pessoa varchar2(50) not null;
+email_Pessoa varchar2(50) not null;
+telefone_Pessoa varchar(50) not null;
+
+
+)
+
+
+create table Endereco(
+
+id_Endereco integer primary key auto increment;
+rua_Endereco varchar2(50) not null;
+numero_Endereco integer not null;
+bairro_Endereco varchar2(50) not null;
+cidade_Endereco varchar2(50) not null;
+cep_Endereco varchar2(50) not null;
+
+
+)
+
+create table Carro(
+
+id_Carro integer primary key auto increment;
+modelo_Carro varchar2(50) not null;
+marca_Carro varchar2(50) not null;
+ano_Carro integer not null;
+versao_Carro varchar2(50) not null;
+
+
+)
+
+create table Oleo(
+
+id_Oleo integer primary key auto increment;
+tipo_Oleo varchar2(50) not null;
+nome_Oleo varchar2(50) not null;
+date_Oleo date not null;
+
+
+
+)
